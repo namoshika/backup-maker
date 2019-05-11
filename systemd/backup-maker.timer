@@ -1,0 +1,8 @@
+[Unit]
+Description=Kick backup-maker
+
+[Timer]
+OnCalendar=*-*-* 04:00:00
+
+[Install]
+WantedBy=multi-user.target

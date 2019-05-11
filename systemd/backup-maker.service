@@ -1,0 +1,9 @@
+[Unit]
+Description=Duplicate "/home/" directory to backup storage at file server.
+
+[Service]
+Type=oneshot
+ExecStart=/opt/backup-maker/make-backup.sh -b
+
+[Install]
+WantedBy=multi-user.target
